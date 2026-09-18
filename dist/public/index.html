@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Order Pterodactyl - Full Automated</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Auto Order Pterodactyl</h1>
+            <p>Sistem Otomatis - Payment Verified → Server Ready!</p>
+        </header>
+
+        <!-- Track Order Section -->
+        <section class="track-section" id="trackSection">
+            <h2>🔍 Cek Status Pesanan</h2>
+            <div class="input-group">
+                <input type="text" id="trackingInput" placeholder="Masukkan Invoice ID (contoh: INV-...)">
+                <button onclick="trackOrder()" class="btn btn-primary">Cek Status</button>
+            </div>
+            <div id="trackResult" class="result-box"></div>
+        </section>
+
+        <!-- New Order Section -->
+        <section class="order-section">
+            <h2>📦 Buat Pesanan Baru</h2>
+            
+            <div class="products-grid" id="productsGrid"></div>
+
+            <div class="form-container" id="orderFormContainer" style="display:none;">
+                <div class="form-header">
+                    <h3>Formulir Pesanan</h3>
+                    <div class="selected-package" id="selectedPackageInfo"></div>
+                </div>
+
+                <form id="orderForm">
+                    <input type="hidden" id="packageId">
+
+                    <div class="form-group">
+                        <label for="customerName">Nama Lengkap *</label>
+                        <input type="text" id="customerName" required placeholder="Masukkan nama lengkap">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerEmail">Email *</label>
+                        <input type="email" id="customerEmail" required placeholder="contoh@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerPhone">WhatsApp *</label>
+                        <input type="tel" id="customerPhone" required placeholder="08xxxxxxxxxx">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentMethod">Metode Pembayaran *</label>
+                        <select id="paymentMethod" required>
+                            <option value="">Pilih metode...</option>
+                            <option value="qr">QRIS (Scan & Auto-Verify)</option>
+                            <option value="transfer">Transfer Bank</option>
+                            <option value="ewallet">E-Wallet (DANA/OVO/Gopay)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                        Buat Pesanan dengan Invoice Unik
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="spinner"></div>
+            <p id="loadingText">Memproses...</p>
+        </div>
+
+        <!-- Success/Error Messages -->
+        <div class="alert alert-success" id="successAlert"></div>
+        <div class="alert alert-error" id="errorAlert"></div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

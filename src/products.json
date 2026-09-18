@@ -1,0 +1,101 @@
+[
+  {
+    "id": "3gb",
+    "name": "3GB Starter",
+    "ram": 3072,
+    "disk": 3072,
+    "cpu": 30,
+    "price": 5000,
+    "egg": 15,
+    "location": 1,
+    "description": "Perfect untuk pemula"
+  },
+  {
+    "id": "4gb",
+    "name": "4GB Basic",
+    "ram": 4096,
+    "disk": 4096,
+    "cpu": 40,
+    "price": 6500,
+    "egg": 15,
+    "location": 1,
+    "description": "Untuk penggunaan umum"
+  },
+  {
+    "id": "5gb",
+    "name": "5GB Standard",
+    "ram": 5120,
+    "disk": 5120,
+    "cpu": 50,
+    "price": 8000,
+    "egg": 15,
+    "location": 1,
+    "description": "Balanced performance"
+  },
+  {
+    "id": "6gb",
+    "name": "6GB Pro",
+    "ram": 6144,
+    "disk": 6144,
+    "cpu": 60,
+    "price": 9500,
+    "egg": 15,
+    "location": 1,
+    "description": "Professional grade"
+  },
+  {
+    "id": "7gb",
+    "name": "7GB Advanced",
+    "ram": 7168,
+    "disk": 7168,
+    "cpu": 70,
+    "price": 11000,
+    "egg": 15,
+    "location": 1,
+    "description": "Advanced features"
+  },
+  {
+    "id": "8gb",
+    "name": "8GB Premium",
+    "ram": 8192,
+    "disk": 8192,
+    "cpu": 80,
+    "price": 12500,
+    "egg": 15,
+    "location": 1,
+    "description": "Premium performance"
+  },
+  {
+    "id": "9gb",
+    "name": "9GB Ultimate",
+    "ram": 9216,
+    "disk": 9216,
+    "cpu": 90,
+    "price": 14000,
+    "egg": 15,
+    "location": 1,
+    "description": "Ultimate power"
+  },
+  {
+    "id": "10gb",
+    "name": "10GB Max",
+    "ram": 10240,
+    "disk": 10240,
+    "cpu": 100,
+    "price": 15000,
+    "egg": 15,
+    "location": 1,
+    "description": "Maximum resources"
+  },
+  {
+    "id": "unlimited",
+    "name": "Unlimited",
+    "ram": 0,
+    "disk": 0,
+    "cpu": 200,
+    "price": 20000,
+    "egg": 15,
+    "location": 1,
+    "description": "Unlimited resources"
+  }
+]
